@@ -27,7 +27,6 @@ supervising the counterfactual attributes.
 | [src/cfgnp/data/](src/cfgnp/data/) | Synthetic SCMs (M-shape, triangle, two-node, ellipse), German Loan, CheXpert |
 | [src/cfgnp/training/](src/cfgnp/training/), [src/cfgnp/loss.py](src/cfgnp/loss.py) | Training loops, losses and per-index metrics |
 | [src/cfgnp/experiments/](src/cfgnp/experiments/) | Two-node identifiability study |
-| [src/benchmarking/](src/benchmarking/) | Baselines: DeepBC and OT-based causal BGMs |
 | [src/medical_diffusion/](src/medical_diffusion/) | VAE / diffusion components for the X-ray experiments |
 
 ## Setup
@@ -41,7 +40,7 @@ pip install -r requirements.txt
 ## Running
 
 ```bash
-python ./src/main.py --mode=<task>
+python ./src/main.py --mode=<task> --seed=<seed>
 ```
 
 Available tasks (see `main` in [src/main.py](src/main.py)):
